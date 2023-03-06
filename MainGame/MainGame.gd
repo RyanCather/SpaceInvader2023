@@ -6,6 +6,7 @@ var currentTimer
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	set_process(true)
 	currentTimer = countdownMax
 	
 	while (currentTimer > 0):
@@ -20,3 +21,6 @@ func _ready():
 	
 	
 	get_tree().change_scene("res://Menu/Menu.tscn")
+
+func _process(delta):
+	$HUD/CurrentScore.text = str(GlobalVariables.scoringInformation["currentScore"])
