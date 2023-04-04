@@ -7,6 +7,7 @@ var bulletSource = preload("res://Bullet/Bullet.tscn")
 func _ready():
 	set_process(true)
 	set_physics_process(true)
+	difficulty_multiplier(6)
 
 func _process(delta):
 	if GlobalVariables.automaticFiring:
@@ -33,4 +34,19 @@ func _physics_process(delta):
 		move_and_collide(Vector2(0, -movement_speed * delta))
 	if Input.is_action_pressed("ui_down"):
 		move_and_collide(Vector2(0, movement_speed * delta))
-	
+
+var hardness_level = 4
+
+func difficulty_multiplier(score):
+	var final_score
+	if hardness_level == 1:
+		final_score = score * 2
+	elif hardness_level == 2:
+		final_score = score * 4
+	elif hardness_level == 3:
+		final_score = score * 8
+	elif hardness_level == 4:
+		final_score = score * 16
+	else:
+		final_score = 0
+	print("final score",final_score,".")
