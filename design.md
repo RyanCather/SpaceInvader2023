@@ -14,7 +14,7 @@ The updated gameplay I'm adding is multiple weapons - lasers and proton bombs. T
 
 The tie fighter is the standard enemy star fighter. At regular intervals (to be defined upon testing) a super star destroyer will appear behind the other fighters and move from left->right or right->left and drop probe droids which target the player and explode.
 
-![Super Star Destroyer](images/ssd.jpeg)
+![Super Star Destroyer](Images/ssd.jpeg)
 
 # Behaviour - User Journey
 
