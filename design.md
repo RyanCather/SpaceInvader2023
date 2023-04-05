@@ -20,3 +20,19 @@ The tie fighter is the standard enemy star fighter. At regular intervals (to be 
 
 
 # Planning Diagram - Project Plan
+
+```mermaid
+gantt
+    title Star Invaders Project Plan
+    dateFormat DD-MM-YY
+    axisFormat %d-%B
+    tickInterval 1week
+
+    section Holidays
+    Schools Holidays: 09-04-23,22-04-23
+
+    section Design
+    Project Overview:05-04-23, 1d
+    Project Plan: 05-04-23, 24-04-23
+
+```
