@@ -32,17 +32,24 @@ gantt
     Schools Holidays: 09-04-23,22-04-23
 
     section Design
+    
     Project Overview:05-04-23, 1d
-    Project Plan: 05-04-23, 24-04-23
-
+    Project Plan: 06-04-23, 24-04-23
+    Behaviours: 24-04-23, 14d
+    Programming Logic: 24-04-23, 14d  
 
     section Implementation
-    UI: 05-04-23, 4d
+    Find A-Wing: 08-05-23, 1d
+    UI: 24-04-23, 4d
     Multiple Enemies:05-04-23, 1d
-
-    Testing: 05-04-23, 1d
+    Export Game: 01-06-23, 1d
+    Code Structure: 08-05-23, 3d
+    Testing: 08-04-23, 30d
 
     section Project Management
+    Read Assessment Task: 05-04-23, 1d
+    Style Guide: 01-06-23, 7d
+    Code Comments: 01-06-23, 7d
     Final Submission: 07-06-23, 1d
 
 ```
