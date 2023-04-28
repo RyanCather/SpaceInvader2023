@@ -1,6 +1,6 @@
 # Project Overview
 
-This game is a simple "space Invaders" clone. The theme of this game is Rebels vs Imperials.
+This game is a simple "Space Invaders" clone. The theme of this game is Rebels vs Imperials.
 
 The Rebels are in a A-Wing (the best star fighter) and the imperials are in an array of Imperial designed space craft.
 
@@ -37,7 +37,7 @@ gantt
 
 
     section Implementation
-    UI: 05-04-23, 1d
+    UI: 05-04-23, 4d
     Multiple Enemies:05-04-23, 1d
 
     Testing: 05-04-23, 1d
