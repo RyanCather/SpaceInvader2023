@@ -2,6 +2,7 @@ extends Control
 
 export (int) var countdownMax
 var currentTimer
+onready var _transition_rect := $SceneTransitionRect
 
 
 # Called when the node enters the scene tree for the first time.
@@ -19,8 +20,8 @@ func _ready():
 	GlobalVariables.bulletInstanceCount = 0
 	
 	
-	
-	get_tree().change_scene("res://Menu/Menu.tscn")
+	_transition_rect.transition_to("res://Menu/Menu.tscn")
+	#get_tree().change_scene("res://Menu/Menu.tscn")
 
 func _process(delta):
 	$HUD/CurrentScore.text = str(GlobalVariables.scoringInformation["currentScore"])
