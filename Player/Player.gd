@@ -1,6 +1,7 @@
 extends KinematicBody2D
 
 var movement_speed = 200
+export (int) var health = 1
 var bulletSource = preload("res://Bullet/Bullet.tscn")
 
 # Called when the node enters the scene tree for the first time.
@@ -50,3 +51,8 @@ func difficulty_multiplier(score):
 	else:
 		final_score = 0
 	print("final score",final_score,".")
+
+func reduceHealth():
+	health -= 1
+	if health == 0:
+		get_tree().change_scene("res://Menu/Menu.tscn")
