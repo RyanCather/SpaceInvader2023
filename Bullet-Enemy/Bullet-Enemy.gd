@@ -20,7 +20,6 @@ func _physics_process(delta):
 			GlobalVariables.enemyBulletInstanceCount -= 1
 			if "Player" in collidedObject.collider.name:
 				collidedObject.collider.reduceHealth()
-				pass
 			else:
 				
 				print("Enemy Bullets: ", GlobalVariables.enemyBulletInstanceCount)
