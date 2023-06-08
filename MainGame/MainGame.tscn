@@ -22,7 +22,7 @@ margin_top = 3.0
 margin_right = 1285.0
 margin_bottom = 723.0
 script = ExtResource( 4 )
-countdownMax = 4
+countdownMax = 30
 
 [node name="SceneTransitionRect" parent="." instance=ExtResource( 7 )]
 anchor_right = 0.0

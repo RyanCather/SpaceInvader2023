@@ -6,7 +6,7 @@ var heart_full = preload("res://Images/hearts/hud_heartFull.png")
 var heart_empty = preload("res://Images/hearts/hud_heartEmpty.png")
 var heart_half = preload("res://Images/hearts/hud_heartHalf.png")
 
-export (MODES) var mode = MODES.simple
+export (MODES) var mode = MODES.partial
 
 func update_health(value):
 	match mode:
