@@ -20,8 +20,10 @@ func _ready():
 	GlobalVariables.bulletInstanceCount = 0
 	
 	
+	
 	_transition_rect.transition_to("res://Menu/Menu.tscn")
 	#get_tree().change_scene("res://Menu/Menu.tscn")
 
 func _process(delta):
+	$HUD/Health.update_health($Player.health)
 	$HUD/CurrentScore.text = str(GlobalVariables.scoringInformation["currentScore"])

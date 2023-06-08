@@ -1,5 +1,8 @@
 extends KinematicBody2D
 
+# Movement speed is used for player, 200 because it links with 100 speed of the enemy
+# This was chosen so the player moved faster than the enemy.
+
 var movement_speed = 200
 export (int) var health = 1
 var bulletSource = preload("res://Bullet/Bullet.tscn")
@@ -23,6 +26,8 @@ func _process(delta):
 			var bulletInstance = bulletSource.instance()
 			bulletInstance.position = Vector2(position.x, position.y-20)
 			get_tree().get_root().add_child(bulletInstance)
+	
+	
 		
 func _physics_process(delta):
 	if Input.is_action_pressed("ui_left"):
